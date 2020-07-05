@@ -6,4 +6,4 @@ services:
 before_install:
         - docker build -t kivmark/docker_react -f Dockerfile.dev .
 script:
-        - docker run -e CI=true MYIMAGE npm run test -- --coverage
+        - docker run -e CI=true kivmark/docker_react npm run test -- --coverage
